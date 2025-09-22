@@ -111,7 +111,7 @@ A step-by-step guide using [OpenSSL][5]:
      a public key plus some other metadata such as who's certificate it's going 
      be. This is a lengthy command:
 
-         openssl req -config 'ssl.conf' -new -key 'client.key' -out 'client.csr' -extensions client \
+         openssl req -config 'ssl.conf' -new -key 'client.key' -out 'client.csr' \
                      -subj '/C=UK/ST=United Kingdom/L=Dundee/O=Some Company/emailAddress=some.guy@somecompany.co.uk/CN=Guy Some/'
 
      *Important:* replace values in `-subj` accordingly - this identifies who's 
